@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="atm-machine">
+        <div class="machine">
+            <p><i class="fa-solid fa-camera"></i></p>
+            <div class="display">
+                <div class="display1">
+                    <marquee behavior="" direction="">---------- Welcome To IOB Bank ATM ----------</marquee>
+                    <h1>
+                        Enter Your Acc No
+                    </h1>
+                    <input type="number" class="acc-number">
+                    <h1>
+                        Enter Your Name
+                    </h1>
+                    <input type="text" class="acc-name" >
+                    <button class="submit-acno">Submit</button>
+                </div>
+                <div class="display2">
+                    <h1>
+                        Enter Your Pin
+                    </h1>
+                    <input type="password" class="pin-number">
+                    <button class="submit-pin">Submit</button>
+                </div>
+                <div class="display3">
+                    <div style="display: flex;flex-direction: row;">
+                        <ul>
+                            <li class="withdraw">Withdraw</li>
+                            <li class="deposit">Deposit</li>
+                            <li class="balance">Bal Enquiry</li>
+                        </ul>
+                        <ul>
+                            <li class="cancel">Cancel</li>
+                        </ul>
+                        <ul>
+                            <li class="details">Details</li>
+                            <li class="others">Others</li>
+                            <li class="changepin">Change Pin</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 style="text-align: center;">Select Yours</h2>
+                    </div>
+                </div>
+                <div class="withdraw-display">
+                    <h2>
+                        Enter The Amount
+                    </h2>
+                    <input type="number" class="withdraw-input" value="0">
+                    <button class="withdraw-submit">Submit</button>
+                    <button class="back">Back</button>
+                </div>
+                <div class="withdraw-result">
+                        <button class="close">Close</button>
+                </div>
+                <div class="close-display">
+                    <h4>Thank You For Using Our ATM !</h4>
+                </div>
+                <div class="deposit-display">
+                    <h2>
+                        Enter The Amount
+                    </h2>
+                    <input type="number" class="deposit-input">
+                    <button class="deposit-submit">Submit</button>
+                    <button class="back1">Back</button>
+                </div>
+                <div class="deposit-result">
+                    <button class="close2">Close</button>
+                </div>
+                <div class="balance-display">
+                    <button class="close3">Close</button>
+                    <button class="back2">Back</button>
+                </div>
+                <div class="cancel-display">
+                    <h2>Thank You For Visiting Our ATM !</h2>
+                </div>
+                <div class="details-display">
+                    <h3>Acc No = 123456</h3>
+                    <h3>PIN = **20</h3>
+                    <h3 class="name-input">Acc Name = Naveen</h3>
+                    <button class="back3">Back</button>
+                </div>
+                <div class="others-display">
+                    <h3>Sorry,Its Not Available But Soon.</h3>
+                    <button class="back4">Back</button>
+                </div>
+                <div class="changepin-display">
+                    <h2>Permission Required. So, You Cannot Change The Pin.</h2>
+                    <button class="back5">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

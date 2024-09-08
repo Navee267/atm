@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", system-ui;
+}
+
+.atm-machine {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #1995AD;
+    justify-content: center;
+    align-items: center;
+}
+
+.atm-machine .machine {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+    background-color: #A1D6E2;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.atm-machine .machine p i {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.display {
+    width: 85%;
+    height: 380px;
+    margin-top: 50px;
+    background-color: #F1F1F2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display1 h1,
+h2 {
+    color: rgb(10, 118, 118);
+    font-size: 35px;
+}
+
+.display1 input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.display1 button {
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px;
+    color: #e6f4f7;
+    background-color: #1995AD;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.display1 button:hover {
+    background-color: #ade9f5;
+    color: black;
+}
+
+.display2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.display2 h1 {
+    color: rgb(10, 118, 118);
+    font-size: 35px;
+}
+
+.display2 input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.display2 button {
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px;
+    color: #e6f4f7;
+    background-color: #1995AD;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.display2 button:hover {
+    background-color: #ade9f5;
+    color: black;
+}
+
+.display3 {
+    display: flex;
+    flex-direction: column-reverse;
+    display: none;
+    justify-content: space-around;
+}
+
+.display3 ul {
+    list-style-type: none;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.display3 ul li {
+    font-size: 23px;
+    margin-top: 28px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.display3 ul li:hover {
+    cursor: pointer;
+    color: #1995AD;
+}
+
+.display marquee {
+    margin-top: 10px;
+}
+
+/* Withdraw display */
+
+.withdraw-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.withdraw-display h1 {
+    color: rgb(10, 118, 118);
+    font-size: 35px;
+}
+
+.withdraw-display input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.withdraw-display button {
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px;
+    color: #e6f4f7;
+    background-color: #1995AD;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.withdraw-display button:hover {
+    background-color: #ade9f5;
+    color: black;
+}
+
+/* deposit display */
+
+.deposit-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.deposit-display h1 {
+    color: rgb(10, 118, 118);
+    font-size: 35px;
+}
+
+.deposit-display input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.deposit-display button {
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px;
+    color: #e6f4f7;
+    background-color: #1995AD;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.deposit-display button:hover {
+    background-color: #ade9f5;
+    color: black;
+}
+
+/* Balance checking Display*/
+
+.balance-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.balance-display h3 {
+    color: rgb(10, 118, 118);
+    font-size: 35px;
+}
+
+.balance-display button {
+    width: 150px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    padding: 10px;
+    color: #e6f4f7;
+    background-color: #1995AD;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.balance-display button:hover {
+    background-color: #ade9f5;
+    color: black;
+}
+
+/* Cancel display  */
+
+.cancel-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.cancel-display h2 {
+    color: rgb(10, 118, 118);
+    font-size: 25px;
+}
+
+/* Details Display */
+
+
+.details-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    margin-top: 20px;
+}
+
+.details-display h3 {
+    color: rgb(10, 118, 118);
+    font-size: 35px;
+}
+
+.details-display input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.details-display button {
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px;
+    color: #e6f4f7;
+    background-color: #1995AD;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.details-display button:hover {
+    background-color: #ade9f5;
+    color: black;
+}
+
+/* Others Display */
+
+.others-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.others-display h3 {
+    color: rgb(10, 118, 118);
+    font-size: 35px;
+}
+
+.others-display input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.others-display button {
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px;
+    color: #e6f4f7;
+    background-color: #1995AD;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.others-display button:hover {
+    background-color: #ade9f5;
+    color: black;
+}
+
+/* Pinchange display */
+
+.changepin-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.changepin-display h2 {
+    color: rgb(10, 118, 118);
+    font-size: 35px;
+}
+
+.changepin-display input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.changepin-display button {
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px;
+    color: #e6f4f7;
+    background-color: #1995AD;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.changepin-display button:hover {
+    background-color: #ade9f5;
+    color: black;
+}
+
+/* Withdraw Result */
+
+.withdraw-result {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    align-items: center;
+}
+
+.withdraw-result h3,
+h2 {
+    color: black;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.close {
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px;
+    color: #e6f4f7;
+    background-color: #1995AD;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.close:hover {
+    background-color: #ade9f5;
+    color: black;
+}
+
+.close-display {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+.close-display h4 {
+    color: #1995AD;
+    font-size: 25px;
+}
+
+.deposit-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.deposit-result h2,
+h3,
+h4 {
+    color: #1995AD;
+    font-size: 27px;
+}
+
+.close2 {
+    width: 150px;
+    margin-top: 50px;
+    padding: 10px;
+    color: #e6f4f7;
+    background-color: #1995AD;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.close2:hover {
+    background-color: #ade9f5;
+    color: black;
+}
+
+@media screen and (max-width:600px) {
+    .atm-machine .machine {
+        width: 90%;
+        height: 600px;
+    }
+}
